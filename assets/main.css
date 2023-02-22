@@ -1,0 +1,270 @@
+html {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+#header {
+    position: relative;
+    background-image: url("/images/bg.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 550px;
+    padding-top: 60px;
+}
+
+.bg-black {
+    position: absolute;
+    display: block;
+    width: 100vw;
+    height: 550px;
+    background-color: rgba(0, 0, 0, 0.249);
+    top: 0;
+    z-index: 1;
+}
+
+.content {
+    position: relative;
+    display: flex;
+    margin-top: 100px;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+}
+
+.content div img {
+    display: block;
+    width: 550px;
+}
+
+.content .text {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@media (max-width:630px) {
+    #header {
+        height: 400px;
+        padding-top: 60px;
+    }
+
+    .bg-black {
+        height: 400px;
+    }
+
+    .content {
+        margin-top: 70px;
+    }
+
+    .content div img {
+        width: 340px;
+    }
+    
+    .content .text {
+        font-size: 20px;
+    }
+}
+
+@media (max-width:340px) {
+    .content div img {
+        width: 280px;
+    }
+    
+    .content .text {
+        font-size: 20px;
+    }
+}
+
+/* Sobre */
+
+#sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sobre h1 {
+    font-size: 35px;
+    margin-top: 80px;
+}
+
+.sobre-content {
+    font-size: 20px;
+    text-align: justify;
+    width: 650px;
+    margin: 10px 0px 40px 0px;
+    height: fit-content;
+}
+
+#sobre .image {
+    overflow: hidden;
+}
+
+#sobre .image img {
+    display: block;
+    width: 500px;
+}
+
+@media (max-width:730px) {
+    #sobre h1 {
+        font-size: 30px;
+        margin-top: 50px;
+    }
+    
+    .sobre-content {
+        font-size: 18px;
+        width: 80vw;
+    }
+    
+    #sobre .image img {
+        display: block;
+        width: 80vw;
+    }
+}
+
+/* Serviços */
+
+#servicos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#servicos h1 {
+    font-size: 35px;
+    margin-top: 80px;
+}
+
+#servicos .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.serv {
+    display: flex;
+    width: 450px;
+    height: 220px;
+    border-radius: 25px;
+    overflow: hidden;
+    background: linear-gradient(257.67deg, #0500FF 9.28%, rgba(217, 217, 217, 0) 89.83%);
+}
+
+.serv-img {
+    width: 225px;
+    position: relative;
+    overflow: hidden;
+}
+
+.serv-img img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 300px;
+}
+
+.serv-content {
+    width: 225px;
+    position: relative;
+}
+
+.serv-content p {
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.serv-content p {
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.serv-btn a {
+    display: block;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    width: fit-content;
+    background-color: white;
+    padding: 3px 10px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.serv-btn a:hover {
+    transform: scale(105%);
+}
+
+@media (max-width:500px) {    
+    #servicos h1 {
+        font-size: 30px;
+        margin-top: 150px;
+    }
+    
+    .serv {
+        width: 90vw;
+    }
+}
+
+/* Contato */
+
+#contato {
+    background-color: #02004A;
+    color: white;
+    text-align: center;
+    padding: 15px 10px;
+    margin-top: 40px;
+}
+
+.contato-p1 {
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    font-weight: 900;
+}
+
+.contato-p2 {
+    margin-top: 5px;
+    font-weight: 400;
+}
+
+/* Footer */
+
+footer {
+    background: #1C1A7D;
+    padding: 20px 10px;
+    text-align: center;
+    color: white;
+}
+
+.footer-ctn {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 50px;
+    justify-content: center;
+}
+
+.rs {
+    display: block;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+}
+
+.rs:hover {
+    transform: scale(105%);
+}
+
+.rs svg {
+    width: 30px;
+}
+
+footer p {
+    margin: 5px;
+    font-size: 10px;
+}
